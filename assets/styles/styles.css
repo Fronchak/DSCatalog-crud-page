@@ -1,0 +1,53 @@
+:root {
+    --primary-color: #407BFF;
+    --gray-dark-color: #263238;
+    --gray-light-color: #9E9E9E;
+    --white-color: #FFF;
+
+}
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* General */
+
+.primary-bg-color {
+    background-color: var(--primary-color);
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.gray-dark-color {
+    color: var(--gray-dark-color);
+}
+
+.gray-light-color {
+    color: var(--gray-light-color);
+}
+
+.white-color {
+    color: var(--white-color);
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+
+/* NAVBAR */
+
+#navbar .navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+#navbar a {
+    text-transform: uppercase;
+    margin: 0 2em;
+    font-size: 1.2em;
+}
+
