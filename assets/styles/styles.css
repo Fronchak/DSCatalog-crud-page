@@ -155,15 +155,21 @@ div {
     font-weight: bold;
 }
 
+#product-categories-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .product-category {
     display: inline-block;
-    width: 100%;
     text-align: center;
     color: #424242;
     font-weight: bold;
     background-color: #8D8D8D;
     border-radius: 0.3em;
     font-size: 1em;
+    padding: 0.2em 0.6em;
+    margin: 0.2em 0.4em 0;
 }
 
 .delete-button,
@@ -192,4 +198,21 @@ div {
 .edit-button:hover {
     color: var(--gray-dark-color);
     border-color: var(--gray-dark-color);
+}
+
+@media (min-width: 992px) {
+    .product-card-img-container {
+        border-bottom: none;
+        border-right: 1px solid var(--gray-light-color);
+    }
+
+    .product-card-img-container .img-fluid {
+        width: 80%
+    }
+
+    .delete-button,
+    .edit-button {
+        margin-top: 0.6em;
+        margin-bottom: 0.6em;
+    }
 }
