@@ -61,11 +61,11 @@ body {
     font-size: 1.2em;
 }
 
-div {
-    border: 1px solid red;
-}
-
 /* SECONDARY NAVBAR */
+
+#sidebar-container {
+    background-color: #FFF;
+}
 
 .sidebar-link {
     color: var(--gray-light-color);
@@ -92,6 +92,19 @@ div {
 @media (min-width: 400px) {
     .sidebar-link {
         font-size: 1em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sidebar-link {
+        border-radius: 0;
+        width: 100%;
+        padding: 1.2em 1.2em;
+        text-align: left;
+    }
+
+    #sidebar-container {
+        min-height: 90vh;
     }
 }
 
@@ -143,6 +156,12 @@ div {
 .product-card-img-container {
     border-bottom: 1px solid var(--gray-light-color);
     text-align: center;
+}
+
+@media (min-width: 992px) {
+    .product-card-img-container {
+        height: 100%;
+    }
 }
 
 .product-card-img-container .img-fluid {
